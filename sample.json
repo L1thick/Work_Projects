@@ -1,0 +1,55 @@
+{
+    "data": [
+        {
+            "id": "36288268",
+            "type": "expirations",
+            "attributes": {
+                "organization-id": 6165870,
+                "organization-name": "Clinet 1",
+                "resource-url": "https://clientone.local",
+                "description": "SSL Certificate expiration",
+                "expiration-date": "2025-05-19T00:00:00.000Z",
+                "created-at": "2022-06-06T18:16:37.000Z",
+                "updated-at": "2024-05-19T21:56:47.000Z",
+                "resource-id": 516520,
+                "resource-type": "SslCertificate",
+                "resource-type-name": "SslCertificate",
+                "resource-name": "clientone.local"
+            },
+            "relationships": {}
+        },
+        {
+            "id": "36360649",
+            "type": "expirations",
+            "attributes": {
+                "organization-id": 6165870,
+                "organization-name": "Clinet 2",
+                "resource-url": "https://clienttwo.local",
+                "description": "Domain expiration",
+                "expiration-date": "2025-03-17T00:00:00.000Z",
+                "created-at": "2022-06-14T16:37:15.000Z",
+                "updated-at": "2024-02-12T15:45:17.000Z",
+                "resource-id": 1143955,
+                "resource-type": "Domain",
+                "resource-type-name": "Domain",
+                "resource-name": "clienttwo.local"
+            },
+            "relationships": {}
+        }
+    ],
+    "meta": {
+        "current-page": 1,
+        "next-page": 2,
+        "prev-page": null,
+        "total-pages": 2,
+        "total-count": 1270,
+        "filters": {}
+    },
+    "links": {
+        "self": null,
+        "first": null,
+        "prev": null,
+        "next": null,
+        "last": null
+    }
+}
