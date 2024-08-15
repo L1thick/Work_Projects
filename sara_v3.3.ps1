@@ -1,9 +1,10 @@
 ﻿# Powershell Script to download SaRACmd, extract, remove Office.
 # This script does not care which version it is, it will remove Office;
-# v3.2
+# v3.3
 
 # NOTES:
 # Intune install command: Powershell.exe -executionpolicy bypass -File sara.ps1
+# Detection Rule for Intune: IF SOFTWARE VERSION is less than "16.0.17830.20138", require software.
 
 # SaRACMD URL. Change if needed:
 $url = "https://aka.ms/SaRA_CommandLineVersionFiles"
@@ -28,8 +29,4 @@ foreach ($process in $officeProcesses) {
 
 # Cleanup after yourself:
 Remove-Item -LiteralPath "C:\saratemp\" -Force -Recurse
-
-# Restart the Intune service if it exists:
-if(Get-Service IntuneManagementExtension) {
-    Restart-Service -Name "Microsoft Intune Management Extension"
-}
+Write-Host "Deployment removed. Process complete." 
